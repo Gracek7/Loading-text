@@ -1,0 +1,35 @@
+body{
+    background-color: #1C1C1E;
+    font-family: 'Poppins', sans-serif;
+}
+
+.loading{
+    font-size: 8rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: inline-block;
+    color: rgba(255,255,255,0.7);
+}
+
+.loading::after{
+    content: attr(data-text);
+    position: absolute;
+    top:0%;
+    left:0%;
+    color: #1251F3;
+    overflow: hidden;
+    width:0%;
+    animation: animacja 9s linear infinite ;
+}
+
+@keyframes animacja{
+    0% {
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
