@@ -21,6 +21,7 @@ body{
     color: #1251F3;
     overflow: hidden;
     width:0%;
+    pointer-events: none;
     animation: animacja 9s linear infinite ;
 }
 
